@@ -1,0 +1,12 @@
+<div *ngIf="showSubtitle" class="bg-center bg-no-repeat bg-[url('/assets/img/AboutImage.png')] bg-gray-700 bg-blend-multiply" id="subtitle">
+    <div class="px-4 mx-auto max-w-screen-xl text-center py-40 sm:py-44 mt-10 sm:mt-20">
+        <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">{{ subtitle }}</h1>
+        <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">{{ description }}</p>
+        <div class="flex space-y-4 justify-center sm:space-y-0 cursor-pointer">
+            <a (click)="scrollTo(scrollSection)" class="py-3 px-5 sm:ms-4 text-base font-medium text-center text-white rounded-lg border border-white hover:border-Secondary-Dark hover:bg-Secondary-Dark focus:ring-4 focus:ring-Secondary-Dark ease-out duration-300">
+                Learn more
+                <span class="ml-4"><i class="fa-solid fa-angles-down"></i></span>
+            </a>  
+        </div>
+    </div>
+</div>

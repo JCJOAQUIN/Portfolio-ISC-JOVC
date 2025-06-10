@@ -1,0 +1,27 @@
+<div class="w-full h-full">
+    <app-subtitle></app-subtitle>
+</div>
+<div class="w-full h-full px-8 py-16 sm:py-32" id="about">
+    <div class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+        <div class="mt-8 sm:-mt-10" >
+            <div class="w-full">
+                <div class="mb-4 text-3xl lg:text-4xl text-Primary-DarkSoft font-semibold">
+                    <h2 class="w-full m-auto mb-4 md:mb-0 border-b-4 border-b-Primary-DarkSoft">{{subtitle}}</h2>
+                </div>
+            </div>
+            <p class="text-gray-600 mb-6 leading-relaxed whitespace-pre-line">
+                {{ aboutMeDescription }}
+            </p>
+            <br>
+            <a href="assets/docs/RESUME JOSE CARLOS JOAQUÍN VAZQUEZ.pdf" download
+                class="inline-block bg-Secondary-Dark text-white font-semibold px-6 py-3 rounded hover:bg-Primary-DarkSoft transition">
+                Download CV
+            </a>
+        </div>
+        <div class="w-full flex justify-center">
+            <div class="w-5/6 aspect-square overflow-hidden bg-primary">
+                <img src="assets/img/Photo_JOVC.png" alt="José Carlos Joaquín" class="rounded-lg shadow-lg w-full mx-auto" />
+            </div>
+        </div>
+     </div>
+</div>
