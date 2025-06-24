@@ -1,7 +1,7 @@
 import { ChangeDetectionStrategy, Component, inject, PLATFORM_ID } from '@angular/core';
 import { Observable } from 'rxjs';
 import { TypewriterService } from '../typerwriter.service';
-import { AsyncPipe, isPlatformBrowser } from '@angular/common';
+import { AsyncPipe, isPlatformBrowser, ViewportScroller } from '@angular/common';
 import { AboutComponent } from '../about/about.component';
 
 @Component({
@@ -25,7 +25,10 @@ export class HomeComponent {
   private platformId = inject(PLATFORM_ID);
   private typewriterService = inject(TypewriterService);
 
+  constructor(private viewportScroller: ViewportScroller){}
+
   ngOnInit() {
+    this.viewportScroller.scrollToPosition([0, 0]);
     if (isPlatformBrowser(this.platformId)) {
       this.typedText$ = this.typewriterService
         .getTypewriterEffect(this.titles);
