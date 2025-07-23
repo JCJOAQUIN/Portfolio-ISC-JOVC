@@ -1,6 +1,7 @@
-import { Component } from '@angular/core';
+import { AfterViewInit, Component, Inject, PLATFORM_ID } from '@angular/core';
 import { SubtitleComponent } from '../subtitle/subtitle.component';
-import { ViewportScroller } from '@angular/common';
+import { isPlatformBrowser, ViewportScroller } from '@angular/common';
+import { initModals, initTabs } from 'flowbite';
 
 @Component({
   selector: 'app-portfolio',
@@ -9,8 +10,19 @@ import { ViewportScroller } from '@angular/common';
   templateUrl: './portfolio.component.html',
   styleUrl: './portfolio.component.css'
 })
-export class PortfolioComponent {
-  constructor( private viewportScroller: ViewportScroller){}
+export class PortfolioComponent implements AfterViewInit {
+
+  constructor( private viewportScroller: ViewportScroller, @Inject(PLATFORM_ID) private platformId: Object ){}
+
+  ngAfterViewInit(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      initTabs();
+      initModals();
+    }
+  }
+
+  titlePortfolio = "Portfolio";
+  
 
   ngOnInit(){
     this.viewportScroller.scrollToPosition([0, 0]);

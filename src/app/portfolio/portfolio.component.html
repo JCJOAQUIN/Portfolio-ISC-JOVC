@@ -1,3 +1,537 @@
 <div class="w-full h-full">
     <app-subtitle></app-subtitle>
 </div>
+
+<section id="portfolio" class="w-full h-full px-8 sm:px-14 py-10 sm:py-24">
+    <div class=" text-Primary-DarkSoft font-semibold">
+        <h2 class="text-3xl lg:text-4xl mb-4">{{titlePortfolio}}</h2>
+        <div class="w-1/4 sm:w-1/12 border-4 border-Primary-DarkSoft mb-2"></div>
+    </div>
+
+    <div class="my-4 flex">
+        <ul class="flex flex-wrap gap-4 justify-center w-full lg:max-w-lg m-auto font-medium text-sm text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-white bg-primary shadow-md shadow-primary transition-all ease-in-out duration-400" data-tabs-inactive-classes="shadow-sm shadow-Infrmation hover:text-white hover:bg-Information transition-all ease-in-out duration-400" role="tablist">
+            <li class="" role="presentation">
+                <button class="inline-block w-36 lg:w-40 py-4 rounded-full space-x-4" id="All-tab" data-tabs-target="#styled-All" type="button" role="tab" aria-controls="profile" aria-selected="false">
+                    <span><i class="fa-solid fa-globe"></i></span><span>All</span>
+                </button>
+            </li>
+            <li class="" role="presentation">
+                <button class="inline-block w-36 lg:w-40 py-4 rounded-full hover:text-Information hover:border-gray-300 dark:hover:text-gray-300 space-x-4" id="Mobile-tab" data-tabs-target="#styled-Mobile" type="button" role="tab" aria-controls="dashboard" aria-selected="false">
+                    <span><i class="fa-solid fa-mobile-alt"></i></span><span>Mobile App</span>
+                </button>
+            </li>
+            <li class="" role="presentation">
+                <button class="inline-block w-36 lg:w-40 py-4 rounded-full hover:text-Information hover:border-gray-300 dark:hover:text-gray-300 space-x-4" id="Desktop-tab" data-tabs-target="#styled-Desktop" type="button" role="tab" aria-controls="settings" aria-selected="false">
+                    <span><i class="fa-solid fa-laptop-code"></i></span><span>Web App</span>
+                </button>
+            </li>
+        </ul>
+    </div>
+
+
+    <div id="default-styled-tab-content">
+        <div class="hidden p-4" id="styled-All" role="tabpanel" aria-labelledby="All-tab">
+            <div class="relative grid grid-cols-1 sm:grid-cols-2 xl:grid-cols-3 2xl:grid-cols-5 mt-8 gap-6">
+                
+                <!--? Fortia Technology - Fortia RRHH -->
+                <div class="col-span-1 relative max-w-md border-Primary-DarkSoft rounded-3xl overflow-hidden shadow-Primary-DarkSoft shadow-sm hover:shadow-md hover:shadow-Primary-DarkSoft">
+                    <div class="flex w-full justify-between p-4 text-Primary-DarkSoft bg-white font-semibold items-center gap-4">
+                        <span class="text-2xl"><i class="fa-solid fa-laptop-code"></i></span>
+                        <span class="text-lg">Fortia RRHH Software</span>
+                    </div>
+                    
+                    <div class="w-full h-64 flex justify-center overflow-hidden">
+                        <img src="assets/img/Portfolio/Fortia/Fortia img.png" alt="" class="w-full hover:scale-125 hover:rotate-2 transition-all ease-in-out duration-300">
+                    </div>
+
+
+                    <div class="p-4 bg-white">
+                        <!-- Modal toggle -->
+                        <button data-modal-target="modal-Fortia-RRHH-Software" data-modal-toggle="modal-Fortia-RRHH-Software" class="w-full p-3 text-base font-bold rounded-lg bg-Primary-DarkSoft text-white hover:bg-Secondary-Dark" type="button">
+                            More information
+                        </button>
+                    
+                        <!-- Main modal -->
+                        <div id="modal-Fortia-RRHH-Software" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                            <div class="relative p-4 w-full max-w-6xl max-h-full">
+                                <!-- Modal content -->
+                                <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                                    <!-- Modal header -->
+                                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                                        <h3 class="flex items-center text-xl font-bold text-gray-900 dark:text-white">
+                                            <img src="assets/img/Portfolio/Fortia/FortiaIcon.png" alt="" class="h-12 mr-4">
+                                            Fortia Technology - Fortia RRHH Software
+                                        </h3>
+                                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal-Fortia-RRHH-Software">
+                                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                            </svg>
+                                            <span class="sr-only">Close modal</span>
+                                        </button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="p-4 md:p-5 space-y-4">
+                                        <p>
+                                            <strong>Fortia RRHH Software</strong> is a proprietary product of <strong>Fortia Technology</strong>, so due to confidentiality rights, I will only display images that <strong>do not include sensitive client data or internal modules</strong>.
+                                        </p>
+                                        <p>
+                                            During my time at <strong>Fortia Technology</strong>, I initially collaborated with the development team of <strong>Fortia RRHH Software</strong> following the <strong>Scrum</strong> methodology, working with technologies such as <strong>.NET with C#, SQL Server, Dapper, Entity Framework, Telerik (Kendo UI)</strong>, and <strong>Azure DevOps</strong>. My responsibilities included <strong>bug fixing</strong> and the <strong>development of new modules</strong>, including a <strong>URL routing management module</strong> within the security subsystem.
+                                        </p>
+                                        <br>
+                                        <img src="assets/img/Portfolio/Fortia/Fortia modulo urls del sistema.png" alt="" class="h-full w-full">
+                                        <br>
+                                        <p>
+                                            Later, I joined the <strong>testing team as support</strong>, conducting manual tests on various system implementations made by other developers. I was responsible for recording video evidence of the tests and <strong>documenting the results</strong> accordingly.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            After that, I became part of the <strong>special development team</strong>, where I contributed to the <strong>documentation</strong> and <strong>bug fixing</strong> of the <strong>Incidents</strong> module in the application.
+                                        </p>
+                                        <br>
+                                        <p>
+                                            Finally, I was assigned to work on the <strong>MyVacations</strong> module used by <strong>PEPSICO</strong>, where I performed several key tasks:
+                                        </p>
+                                        <ul class="p-5 list-disc space-y-4">
+                                            <li>
+                                                <strong>Reviewed employee data files</strong> from various countries to ensure proper onboarding into the platform.
+                                            </li>
+                                            <li>
+                                                <strong>Developed the “System Indicators” section</strong>, which tracks usage of the MyVacations platform by each employee, allowing the company to measure general adoption and usage effectiveness.
+                                                <img src="assets/img/Portfolio/Fortia/Fortia Uso plataforma.png" alt="" class="h-full w-full mt-4">
+                                            </li>
+                                            <li>
+                                                <strong>Collaborated on the multinational implementation for PEPSICO</strong>, customizing the <strong>MyVacations</strong> application to comply with the local policies and business rules of each country.
+                                            </li>
+                                        </ul>
+                                        
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                        <button data-modal-hide="modal-Fortia-RRHH-Software" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-Error rounded-lg border border-Error hover:bg-red-500  focus:z-10 focus:ring-4 focus:ring-Error ">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+                <!--? Brincolines Happy Toys - product rental platform -->
+                <div class="col-span-1 relative max-w-md border-Primary-DarkSoft rounded-3xl overflow-hidden shadow-Primary-DarkSoft shadow-sm hover:shadow-md hover:shadow-Primary-DarkSoft">
+                    <div class="flex w-full justify-between p-4 text-Primary-DarkSoft bg-white font-semibold items-center gap-4">
+                        <span class="text-2xl"><i class="fa-solid fa-laptop-code"></i></span>
+                        <span class="text-lg">Product rental platform</span>
+                    </div>
+                    
+                    <div class="w-full h-64 flex justify-center overflow-hidden">
+                        <img src="assets/img/Portfolio/Happy Toys/Brincolines Happy Toys Desktop.png" alt="" class="w-full hover:scale-125 hover:rotate-2 transition-all ease-in-out duration-300">
+                    </div>
+
+
+                    <div class="p-4 bg-white">
+                        <!-- Modal toggle -->
+                        <button data-modal-target="modal-Product-rental-platform" data-modal-toggle="modal-Product-rental-platform" class="w-full p-3 text-base font-bold rounded-lg bg-Primary-DarkSoft text-white hover:bg-Secondary-Dark" type="button">
+                            More information
+                        </button>
+                    
+                        <!-- Main modal -->
+                        <div id="modal-Product-rental-platform" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                            <div class="relative p-4 w-full max-w-6xl max-h-full text-primary font-semibold">
+                                <!-- Modal content -->
+                                <div class="relative bg-white rounded-lg shadow-sm">
+                                    <!-- Modal header -->
+                                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                                        <h3 class="flex items-center text-xl font-bold text-Secondary-Dark dark:text-white">
+                                            <img src="assets/img/Portfolio/Happy Toys/Logo_Brincolines Happy Toys.png" alt="" class="h-12 mr-4">
+                                            Brincolines Happy Toys - Product rental platform
+                                        </h3>
+                                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal-Product-rental-platform">
+                                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                            </svg>
+                                            <span class="sr-only">Close modal</span>
+                                        </button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="p-4 md:p-5 space-y-4">
+                                        <p>
+                                            Desarrollo del sistema de renta de productos utlizando el enfoque de diseño mobile first y con el stack MEAN.
+                                        </p>
+                                        <div class="flex flex-wrap sm:block font-bold text-lg text-Primary-DarkSoft">
+                                            <span class="my-4">Mobile layout</span>
+                                            <img src="assets/img/Portfolio/Happy Toys/Brincolines Happy Toys Mobile.png" alt="Brincolines Happy Toys Mobile image" class="h-full">
+                                            
+                                            <span class="mt-8 mb-4 bottom-4">Tablet layout</span>
+                                            <img src="assets/img/Portfolio/Happy Toys/Brincolines Happy Toys Tablet.png" alt="Brincolines Happy Toys Tablet image" class="h-full">
+                                            
+                                            <span class="mt-8 mb-4">Desktop layout</span>
+                                            <img src="assets/img/Portfolio/Happy Toys/Brincolines Happy Toys Desktop.png" alt="Brincolines Happy Toys Desktop image" class="h-full">
+                                        </div>
+                                        <br>
+                                    
+
+
+                                        
+                                        <h3 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Used technologies:</h3>
+                                        <ul class="max-w-md space-y-1 text-Information list-inside">
+                                            <li class="flex items-center">
+                                                <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                                </svg>
+                                                Angular 18
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                                </svg>
+                                                TypeScript
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                                </svg>
+                                                Css 3
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                                </svg>
+                                                TailwindCSS
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-3.5 h-3.5 me-2 text-green-500 dark:text-green-400 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                                </svg>
+                                                Flowbite
+                                            </li>
+                                        </ul>
+
+                                        <h3 class="mb-2 text-lg font-semibold text-gray-900 dark:text-white">Tecnologias a implementar:</h3>
+                                        <ul class="max-w-md space-y-1 text-Information list-inside">
+                                            
+                                            <li class="flex items-center">
+                                                <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                                </svg>
+                                                Mongo
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                                </svg>
+                                                Express
+                                            </li>
+                                            <li class="flex items-center">
+                                                <svg class="w-3.5 h-3.5 me-2 text-gray-500 dark:text-gray-400 shrink-0" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                                                    <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5Zm3.707 8.207-4 4a1 1 0 0 1-1.414 0l-2-2a1 1 0 0 1 1.414-1.414L9 10.586l3.293-3.293a1 1 0 0 1 1.414 1.414Z"/>
+                                                </svg>
+                                                NodeJs
+                                            </li>
+                                        </ul>
+
+
+
+
+
+
+                                        
+                                    </div>
+                                    <!-- Modal footer -->
+                                    <div class="flex items-center p-4 md:p-5 border-t border-gray-200 rounded-b dark:border-gray-600">
+                                        <button data-modal-hide="modal-Product-rental-platform" type="button" class="py-2.5 px-5 ms-3 text-sm font-medium text-white focus:outline-none bg-Error rounded-lg border border-Error hover:bg-red-500  focus:z-10 focus:ring-4 focus:ring-Error ">Close</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--? Brincolines Happy Toys - product rental platform -->
+                
+                <div class="col-span-1 relative max-w-md border-Primary-DarkSoft rounded-3xl overflow-hidden shadow-Primary-DarkSoft shadow-sm hover:shadow-md hover:shadow-Primary-DarkSoft">
+                    <div class="flex w-full justify-between p-4 text-Primary-DarkSoft bg-white font-semibold items-center gap-4">
+                        <span class="text-2xl"><i class="fa-solid fa-laptop-code"></i></span>
+                        <span class="text-lg">Product rental platform</span>
+                    </div>
+                    
+                    <div class="w-full h-64 flex justify-center overflow-hidden">
+                        <img src="assets/img/Portfolio/Happy Toys/Brincolines Happy Toys Desktop.png" alt="" class="w-full scale-100 hover:scale-125 hover:rotate-2 transition-all ease-in-out duration-300">
+                    </div>
+
+
+                    <div class="p-4 bg-white">
+                        <!-- Modal toggle -->
+                        <button data-modal-target="modal-GlobalMentoring" data-modal-toggle="modal-GlobalMentoring" class="w-full p-3 text-base font-bold rounded-lg bg-Primary-DarkSoft text-white hover:bg-Secondary-Dark" type="button">
+                            More information
+                        </button>
+                    
+                        <!-- Main modal -->
+                        <div id="modal-GlobalMentoring" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                                <!-- Modal content -->
+                                <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                                    <!-- Modal header -->
+                                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                            Fortia Technology
+                                        </h3>
+                                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal-GlobalMentoring">
+                                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                            </svg>
+                                            <span class="sr-only">Close modal</span>
+                                        </button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="p-4 md:p-5 space-y-4">
+                                        <img src="assets/img/Certificades/Universidad HTML 2021-Aprende HTML desde Cero hasta Experto.jpg" alt="" class="h-full w-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--? Pantiger - Sistema -->
+                
+                <div class="col-span-1 relative max-w-md border-Primary-DarkSoft rounded-3xl overflow-hidden shadow-Primary-DarkSoft shadow-sm hover:shadow-md hover:shadow-Primary-DarkSoft">
+                    <div class="flex w-full justify-between p-4 text-Primary-DarkSoft bg-white font-semibold items-center gap-4">
+                        <span class="text-2xl"><i class="fa-solid fa-laptop-code"></i></span>
+                        <span class="text-lg">Sistema</span>
+                    </div>
+                    
+                    <div class="w-full h-64 flex justify-center overflow-hidden">
+                        <img src="assets/img/Portfolio/Happy Toys/Brincolines Happy Toys Desktop.png" alt="" class="w-full scale-100 hover:scale-125 hover:rotate-2 transition-all ease-in-out duration-300">
+                    </div>
+
+
+                    <div class="p-4 bg-white">
+                        <!-- Modal toggle -->
+                        <button data-modal-target="modal-GlobalMentoring" data-modal-toggle="modal-GlobalMentoring" class="w-full p-3 text-base font-bold rounded-lg bg-Primary-DarkSoft text-white hover:bg-Secondary-Dark" type="button">
+                            More information
+                        </button>
+                    
+                        <!-- Main modal -->
+                        <div id="modal-GlobalMentoring" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                                <!-- Modal content -->
+                                <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                                    <!-- Modal header -->
+                                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                            Fortia Technology
+                                        </h3>
+                                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal-GlobalMentoring">
+                                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                            </svg>
+                                            <span class="sr-only">Close modal</span>
+                                        </button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="p-4 md:p-5 space-y-4">
+                                        <img src="assets/img/Certificades/Universidad HTML 2021-Aprende HTML desde Cero hasta Experto.jpg" alt="" class="h-full w-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--? PC Sistems - attendance control system -->
+                
+                <div class="col-span-1 relative max-w-md border-Primary-DarkSoft rounded-3xl overflow-hidden shadow-Primary-DarkSoft shadow-sm hover:shadow-md hover:shadow-Primary-DarkSoft">
+                    <div class="flex w-full justify-between p-4 text-Primary-DarkSoft bg-white font-semibold items-center gap-4">
+                        <span class="text-2xl"><i class="fa-solid fa-laptop-code"></i></span>
+                        <span class="text-lg">Attendance control system</span>
+                    </div>
+                    
+                    <div class="w-full h-64 flex justify-center overflow-hidden">
+                        <img src="assets/img/Portfolio/Happy Toys/Brincolines Happy Toys Desktop.png" alt="" class="w-full scale-100 hover:scale-125 hover:rotate-2 transition-all ease-in-out duration-300">
+                    </div>
+
+
+                    <div class="p-4 bg-white">
+                        <!-- Modal toggle -->
+                        <button data-modal-target="modal-GlobalMentoring" data-modal-toggle="modal-GlobalMentoring" class="w-full p-3 text-base font-bold rounded-lg bg-Primary-DarkSoft text-white hover:bg-Secondary-Dark" type="button">
+                            More information
+                        </button>
+                    
+                        <!-- Main modal -->
+                        <div id="modal-GlobalMentoring" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                                <!-- Modal content -->
+                                <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                                    <!-- Modal header -->
+                                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                            Fortia Technology
+                                        </h3>
+                                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal-GlobalMentoring">
+                                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                            </svg>
+                                            <span class="sr-only">Close modal</span>
+                                        </button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="p-4 md:p-5 space-y-4">
+                                        <img src="assets/img/Certificades/Universidad HTML 2021-Aprende HTML desde Cero hasta Experto.jpg" alt="" class="h-full w-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--? Personal - employee management system -->
+                
+                <div class="col-span-1 relative max-w-md border-Primary-DarkSoft rounded-3xl overflow-hidden shadow-Primary-DarkSoft shadow-sm hover:shadow-md hover:shadow-Primary-DarkSoft">
+                    <div class="flex w-full justify-between p-4 text-Primary-DarkSoft bg-white font-semibold items-center gap-4">
+                        <span class="text-2xl"><i class="fa-solid fa-laptop-code"></i></span>
+                        <span class="text-lg">Employee management system</span>
+                    </div>
+                    
+                    <div class="w-full h-64 flex justify-center overflow-hidden">
+                        <img src="assets/img/Portfolio/Happy Toys/Brincolines Happy Toys Desktop.png" alt="" class="w-full scale-100 hover:scale-125 hover:rotate-2 transition-all ease-in-out duration-300">
+                    </div>
+
+
+                    <div class="p-4 bg-white">
+                        <!-- Modal toggle -->
+                        <button data-modal-target="modal-GlobalMentoring" data-modal-toggle="modal-GlobalMentoring" class="w-full p-3 text-base font-bold rounded-lg bg-Primary-DarkSoft text-white hover:bg-Secondary-Dark" type="button">
+                            More information
+                        </button>
+                    
+                        <!-- Main modal -->
+                        <div id="modal-GlobalMentoring" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                                <!-- Modal content -->
+                                <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                                    <!-- Modal header -->
+                                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                            Independiente
+                                        </h3>
+                                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal-GlobalMentoring">
+                                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                            </svg>
+                                            <span class="sr-only">Close modal</span>
+                                        </button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="p-4 md:p-5 space-y-4">
+                                        <img src="assets/img/Certificades/Universidad HTML 2021-Aprende HTML desde Cero hasta Experto.jpg" alt="" class="h-full w-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!--? Personal - Personal Web Site -->
+                
+                <div class="col-span-1 relative max-w-md border-Primary-DarkSoft rounded-3xl overflow-hidden shadow-Primary-DarkSoft shadow-sm hover:shadow-md hover:shadow-Primary-DarkSoft">
+                    <div class="flex w-full justify-between p-4 text-Primary-DarkSoft bg-white font-semibold items-center gap-4">
+                        <span class="text-2xl"><i class="fa-solid fa-laptop-code"></i></span>
+                        <span class="text-lg">Personal Web Site</span>
+                    </div>
+                    
+                    <div class="w-full h-64 flex justify-center overflow-hidden">
+                        <img src="assets/img/Portfolio/Personal/Personal Web Site.png" alt="" class="w-full scale-100 hover:scale-125 hover:rotate-2 transition-all ease-in-out duration-300">
+                    </div>
+
+
+                    <div class="p-4 bg-white">
+                        <!-- Modal toggle -->
+                        <button data-modal-target="modal-GlobalMentoring" data-modal-toggle="modal-GlobalMentoring" class="w-full p-3 text-base font-bold rounded-lg bg-Primary-DarkSoft text-white hover:bg-Secondary-Dark" type="button">
+                            More information
+                        </button>
+                    
+                        <!-- Main modal -->
+                        <div id="modal-GlobalMentoring" tabindex="-1" aria-hidden="true" class="hidden overflow-y-auto overflow-x-hidden fixed top-0 right-0 left-0 z-50 justify-center items-center w-full md:inset-0 h-[calc(100%-1rem)] max-h-full">
+                            <div class="relative p-4 w-full max-w-2xl max-h-full">
+                                <!-- Modal content -->
+                                <div class="relative bg-white rounded-lg shadow-sm dark:bg-gray-700">
+                                    <!-- Modal header -->
+                                    <div class="flex items-center justify-between p-4 md:p-5 border-b rounded-t dark:border-gray-600 border-gray-200">
+                                        <h3 class="text-xl font-semibold text-gray-900 dark:text-white">
+                                            Independiente
+                                        </h3>
+                                        <button type="button" class="text-gray-400 bg-transparent hover:bg-gray-200 hover:text-gray-900 rounded-lg text-sm w-8 h-8 ms-auto inline-flex justify-center items-center dark:hover:bg-gray-600 dark:hover:text-white" data-modal-hide="modal-GlobalMentoring">
+                                            <svg class="w-3 h-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 14 14">
+                                                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 1 6 6m0 0 6 6M7 7l6-6M7 7l-6 6"/>
+                                            </svg>
+                                            <span class="sr-only">Close modal</span>
+                                        </button>
+                                    </div>
+                                    <!-- Modal body -->
+                                    <div class="p-4 md:p-5 space-y-4">
+                                        <img src="assets/img/Certificades/Universidad HTML 2021-Aprende HTML desde Cero hasta Experto.jpg" alt="" class="h-full w-full">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                
+
+
+                
+
+            </div>
+
+            
+
+
+
+
+        </div>
+        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-Mobile" role="tabpanel" aria-labelledby="Mobile-tab">
+            <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+        </div>
+        <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-Desktop" role="tabpanel" aria-labelledby="Desktop-tab">
+            <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+        </div>
+    </div>
+
+
+    
+
+<!-- <div class="mb-4 border-b border-gray-200 dark:border-gray-700">
+    <ul class="flex flex-wrap -mb-px text-sm font-medium text-center" id="default-styled-tab" data-tabs-toggle="#default-styled-tab-content" data-tabs-active-classes="text-purple-600 hover:text-purple-600 dark:text-purple-500 dark:hover:text-purple-500 border-purple-600 dark:border-purple-500" data-tabs-inactive-classes="dark:border-transparent text-gray-500 hover:text-gray-600 dark:text-gray-400 border-gray-100 hover:border-gray-300 dark:border-gray-700 dark:hover:text-gray-300" role="tablist">
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-lg" id="profile-styled-tab" data-tabs-target="#styled-profile" type="button" role="tab" aria-controls="profile" aria-selected="false">Profile</button>
+        </li>
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="dashboard-styled-tab" data-tabs-target="#styled-dashboard" type="button" role="tab" aria-controls="dashboard" aria-selected="false">Dashboard</button>
+        </li>
+        <li class="me-2" role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="settings-styled-tab" data-tabs-target="#styled-settings" type="button" role="tab" aria-controls="settings" aria-selected="false">Settings</button>
+        </li>
+        <li role="presentation">
+            <button class="inline-block p-4 border-b-2 rounded-t-lg hover:text-gray-600 hover:border-gray-300 dark:hover:text-gray-300" id="contacts-styled-tab" data-tabs-target="#styled-contacts" type="button" role="tab" aria-controls="contacts" aria-selected="false">Contacts</button>
+        </li>
+    </ul>
+</div>
+<div id="default-styled-tab-content">
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-profile" role="tabpanel" aria-labelledby="profile-tab">
+        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Profile tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    </div>
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-dashboard" role="tabpanel" aria-labelledby="dashboard-tab">
+        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Dashboard tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    </div>
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-settings" role="tabpanel" aria-labelledby="settings-tab">
+        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Settings tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    </div>
+    <div class="hidden p-4 rounded-lg bg-gray-50 dark:bg-gray-800" id="styled-contacts" role="tabpanel" aria-labelledby="contacts-tab">
+        <p class="text-sm text-gray-500 dark:text-gray-400">This is some placeholder content the <strong class="font-medium text-gray-800 dark:text-white">Contacts tab's associated content</strong>. Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling.</p>
+    </div>
+</div> -->
+
+
+
+   
+</section>

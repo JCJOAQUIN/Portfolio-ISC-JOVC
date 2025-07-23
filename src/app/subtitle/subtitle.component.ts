@@ -53,6 +53,12 @@ export class SubtitleComponent {
         this.showSubtitle = 1;
         this.description = 'Do you have an idea or project in mind? I’m available for collaborations, custom software development, or technical consulting. Feel free to get in touch to start working together.';
       break;
+      case url.includes('Credits'):
+        this.scrollSection = 'credits';
+        this.subtitle = 'Credits';
+        this.showSubtitle = 1;
+        this.description = 'From icons to fonts, each element has been carefully selected from open or free sources that make it possible to build high-quality visual experiences. \n\nBelow, you\'ll find the proper attributions in accordance with the usage licenses of each resource.';
+      break;
     }
   }
 
