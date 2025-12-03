@@ -1,8 +1,8 @@
 {
-  "routes": [
+  "rewrites": [
     {
-      "src": "/google3f530d6ce4ea6d4c.html",
-      "dest": "/google3f530d6ce4ea6d4c.html"
+      "source": "/google3f530d6ce4ea6d4c.html",
+      "destination": "/google3f530d6ce4ea6d4c.html"
     }
   ]
 }
