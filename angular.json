@@ -22,7 +22,6 @@
             "tsConfig": "tsconfig.app.json",
             "assets": [
               "src/assets",
-              "src/sitemap.xml",
               "src/robots.txt",
               "src/sitemap.xml",
               "src/google3f530d6ce4ea6d4c.html",
