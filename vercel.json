@@ -1,8 +1,11 @@
 {
-  "rewrites": [
+  "headers": [
     {
       "source": "/google3f530d6ce4ea6d4c.html",
-      "destination": "/google3f530d6ce4ea6d4c.html"
+      "headers": [
+        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
+        { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
+      ]
     }
   ]
 }
