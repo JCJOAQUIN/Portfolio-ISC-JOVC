@@ -2,8 +2,7 @@
   "routes": [
     {
       "src": "/google3f530d6ce4ea6d4c.html",
-      "dest": "/google3f530d6ce4ea6d4c.html",
-      "headers": { "cache-control": "public, max-age=0, must-revalidate" }
+      "dest": "/google3f530d6ce4ea6d4c.html"
     }
   ]
 }
