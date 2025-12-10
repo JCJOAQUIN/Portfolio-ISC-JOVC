@@ -1,11 +1,8 @@
 {
-  "headers": [
-    {
-      "source": "/google3f530d6ce4ea6d4c.html",
-      "headers": [
-        { "key": "Cache-Control", "value": "public, max-age=0, must-revalidate" },
-        { "key": "Content-Type", "value": "text/plain; charset=utf-8" }
-      ]
-    }
+  "routes": [
+    { "src": "/sitemap.xml", "dest": "/sitemap.xml" },
+    { "src": "/robots.txt", "dest": "/robots.txt" },
+    { "src": "/google3f530d6ce4ea6d4c.html", "dest": "/google3f530d6ce4ea6d4c.html" }
   ]
 }
+
