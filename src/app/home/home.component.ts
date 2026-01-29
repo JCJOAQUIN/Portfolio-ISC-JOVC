@@ -2,12 +2,12 @@ import { ChangeDetectionStrategy, Component, inject, PLATFORM_ID } from '@angula
 import { Observable } from 'rxjs';
 import { TypewriterService } from '../typerwriter.service';
 import { AsyncPipe, isPlatformBrowser, ViewportScroller } from '@angular/common';
-import { AboutComponent } from '../about/about.component';
+// import { AboutComponent } from '../about/about.component';
 
 @Component({
   selector: 'app-home',
   standalone: true,
-  imports: [AsyncPipe, AboutComponent],
+  imports: [AsyncPipe, ],
   templateUrl: './home.component.html',
   styleUrl: './home.component.css',
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -20,7 +20,7 @@ export class HomeComponent {
 
   typedText$!: Observable<string>;
 
-  titles = ['Computer Systems Engineer', 'Software Developer', 'Web Developer'];
+  titles = ['Computer Systems Engineer', 'Software Developer', 'Web Developer', 'Backend Developer', 'Frontend Developer', 'Fullstack Developer'];
 
   private platformId = inject(PLATFORM_ID);
   private typewriterService = inject(TypewriterService);

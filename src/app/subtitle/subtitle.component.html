@@ -2,12 +2,12 @@
     <div class="px-4 mx-auto max-w-screen-xl text-center py-40  mt-10 sm:mt-20">
         <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl">{{ subtitle }}</h1>
         <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48 whitespace-pre-line">{{ description }}</p>
-        <div class="text-xs sm:text-base space-y-4 justify-center sm:space-y-0 cursor-pointer w-full">
+        <div class="text-xs space-y-4 justify-center sm:space-y-0 cursor-pointer w-full">
             <a (click)="scrollTo(scrollSection)" class="py-3 px-4 sm:px-5 sm:ms-4 font-medium text-center text-white rounded-lg border border-white hover:border-Secondary-Dark hover:bg-Secondary-Dark focus:ring-4 focus:ring-Secondary-Dark ease-out duration-300">
                 Learn more
                 <span class="ml-4"><i class="fa-solid fa-angles-down"></i></span>
             </a>
-            <a *ngIf="downloadResume" [ngClass]="{'flex bg-Primary-DarkSoft border-none fixed bottom-20 right-6 ease-in-out duration-7000': downloadScrollResume}" href="assets/docs/Resume- José Carlos Joaquín Vázquez - Full Stack Developer.pdf" download
+            <a *ngIf="downloadResume" [ngClass]="{'flex bg-Primary-DarkSoft border-none fixed bottom-12 right-2 ease-in-out duration-7000': downloadScrollResume}" href="assets/docs/Resume- José Carlos Joaquín Vázquez - Full Stack Developer.pdf" download
                 class="py-3 px-4 sm:px-5 ms-2 sm:ms-4 font-medium text-center text-white rounded-lg border border-white hover:border-secondary hover:bg-secondary focus:ring-4 focus:ring-Secondary-Dark">
                 <span><i class="fa-solid fa-file-lines me-2"></i></span> Download Resume
             </a>

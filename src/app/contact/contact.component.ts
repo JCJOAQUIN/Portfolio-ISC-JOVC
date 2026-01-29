@@ -12,6 +12,8 @@ import { ViewportScroller } from '@angular/common';
 export class ContactComponent {
   constructor( private viewportScroller: ViewportScroller){}
 
+  titleContac = "Contact";
+  
   ngOnInit(){
     this.viewportScroller.scrollToPosition([0, 0]);
   }
